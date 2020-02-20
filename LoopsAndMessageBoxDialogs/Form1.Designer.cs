@@ -31,6 +31,8 @@
             this.btnWhile = new System.Windows.Forms.Button();
             this.btnDoWhile = new System.Windows.Forms.Button();
             this.btnFor = new System.Windows.Forms.Button();
+            this.txtM = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnWhile
@@ -41,7 +43,7 @@
             this.btnWhile.TabIndex = 0;
             this.btnWhile.Text = "While Loop";
             this.btnWhile.UseVisualStyleBackColor = true;
-            this.btnWhile.Click += new System.EventHandler(this.button1_Click);
+            this.btnWhile.Click += new System.EventHandler(this.btnWhile_Click);
             // 
             // btnDoWhile
             // 
@@ -51,7 +53,7 @@
             this.btnDoWhile.TabIndex = 1;
             this.btnDoWhile.Text = "Do While Loop";
             this.btnDoWhile.UseVisualStyleBackColor = true;
-            this.btnDoWhile.Click += new System.EventHandler(this.button2_Click);
+            this.btnDoWhile.Click += new System.EventHandler(this.btnDoWhile_Click);
             // 
             // btnFor
             // 
@@ -61,18 +63,39 @@
             this.btnFor.TabIndex = 2;
             this.btnFor.Text = "For Loop";
             this.btnFor.UseVisualStyleBackColor = true;
+            this.btnFor.Click += new System.EventHandler(this.btnFor_Click);
+            // 
+            // txtM
+            // 
+            this.txtM.Location = new System.Drawing.Point(254, 137);
+            this.txtM.Name = "txtM";
+            this.txtM.Size = new System.Drawing.Size(100, 20);
+            this.txtM.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(251, 108);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "How many for loops?";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(366, 169);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtM);
             this.Controls.Add(this.btnFor);
             this.Controls.Add(this.btnDoWhile);
             this.Controls.Add(this.btnWhile);
             this.Name = "Form1";
             this.Text = "Hello Loops";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -81,6 +104,8 @@
         private System.Windows.Forms.Button btnWhile;
         private System.Windows.Forms.Button btnDoWhile;
         private System.Windows.Forms.Button btnFor;
+        private System.Windows.Forms.TextBox txtM;
+        private System.Windows.Forms.Label label1;
     }
 }
 
